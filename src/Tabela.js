@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Tabela({vetor, setIdConta, setDataInicio, setDataFim, setOperador}) {
+function Tabela({vetor, saldoTotal, saldoPeriodo, setIdConta, setDataInicio, setDataFim, setOperador}) {
 
   const [idContaInput, setIdContaInput] = useState("");
   const [dataInicioInput, setDataInicioInput] = useState("");
@@ -57,6 +57,10 @@ function Tabela({vetor, setIdConta, setDataInicio, setDataFim, setOperador}) {
 
       <table className="table">
         <thead>
+          <tr>
+            <th>Saldo Total: {saldoTotal}</th>
+            <th>Saldo Período: {saldoPeriodo}</th>
+          </tr>
           <tr>
             <th>#</th>
             <th>Dados</th>
