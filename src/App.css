@@ -1,0 +1,14 @@
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+  
+.form-group {
+    margin-bottom: 30px;
+}
+  
+form .btn-primary {
+    float: right;
+}
